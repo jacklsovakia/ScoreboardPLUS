@@ -6,3 +6,11 @@ C:\Users\Jackson\Documents\SharpDevelop Projects\ScoreBoard+\ScoreBoard+\obj\Deb
 C:\Users\Jackson\Documents\SharpDevelop Projects\ScoreBoard+\ScoreBoard+\obj\Debug\ScoreBoard+.csproj.GenerateResource.Cache
 C:\Users\Jackson\Documents\SharpDevelop Projects\ScoreBoard+\ScoreBoard+\obj\Debug\ScoreBoard+.exe
 C:\Users\Jackson\Documents\SharpDevelop Projects\ScoreBoard+\ScoreBoard+\obj\Debug\ScoreBoard+.pdb
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\obj\Debug\ScoreBoard+.csprojResolveAssemblyReference.cache
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\obj\Debug\ScoreBoard_.MainForm.resources
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\obj\Debug\ScoreBoard+.csproj.GenerateResource.Cache
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\obj\Debug\ScoreBoard+.exe
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\bin\Debug\ScoreBoard+.exe.config
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\bin\Debug\ScoreBoard+.exe
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\bin\Debug\ScoreBoard+.pdb
+C:\Users\Jackson\Documents\GitHub\ScoreboardPLUS\ScoreBoard+\obj\Debug\ScoreBoard+.pdb

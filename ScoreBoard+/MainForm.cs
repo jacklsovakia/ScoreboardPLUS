@@ -14,9 +14,9 @@ namespace ScoreBoard_
 			InitializeComponent();
 			try
 			{
-				t1namebox.Text = read("T1Name.txt");
+				t1namebox.Text = Regex.Replace(read("T1Name.txt"), @"(\n|\r)+", string.Empty);
 				t1scorebox.Text = Regex.Replace(read("T1Score.txt"), @"\s+", string.Empty);
-				t2namebox.Text = read("T2Name.txt");
+				t2namebox.Text = Regex.Replace(read("T2Name.txt"), @"(\n|\r)+", string.Empty);
 				t2scorebox.Text = Regex.Replace(read("T2Score.txt"), @"\s+", string.Empty);
 			}catch{
 				MessageBox.Show("Failed to read data. Ignore if first run.");
@@ -43,9 +43,9 @@ namespace ScoreBoard_
 		
 		void UpdatebuttonClick(object sender, EventArgs e)
 		{
-			write("T1Name.txt", t1namebox.Text);
+			write("T1Name.txt", Regex.Replace(t1namebox.Text, @"(\n|\r)+", string.Empty));
 			write("T1Score.txt", Regex.Replace(t1scorebox.Text, @"\s+", string.Empty));
-			write("T2Name.txt", t2namebox.Text);
+			write("T2Name.txt", Regex.Replace(t2namebox.Text, @"(\n|\r)+", string.Empty));
 			write("T2Score.txt", Regex.Replace(t2scorebox.Text, @"\s+", string.Empty));
 			write("Quarter.txt", quarterbox.Value.ToString());
 		}
