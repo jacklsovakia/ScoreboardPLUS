@@ -3,6 +3,7 @@ using System.IO;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
+using System.Text.RegularExpressions;
 
 namespace ScoreBoard_
 {
@@ -14,9 +15,9 @@ namespace ScoreBoard_
 			try
 			{
 				t1namebox.Text = read("T1Name.txt");
-				t1scorebox.Text = read("T1Score.txt");
+				t1scorebox.Text = Regex.Replace(read("T1Score.txt"), @"\s+", string.Empty);
 				t2namebox.Text = read("T2Name.txt");
-				t2scorebox.Text = read("T2Score.txt");
+				t2scorebox.Text = Regex.Replace(read("T2Score.txt"), @"\s+", string.Empty);
 			}catch{
 				MessageBox.Show("Failed to read data. Ignore if first run.");
 			}
@@ -43,9 +44,9 @@ namespace ScoreBoard_
 		void UpdatebuttonClick(object sender, EventArgs e)
 		{
 			write("T1Name.txt", t1namebox.Text);
-			write("T1Score.txt", t1scorebox.Text);
+			write("T1Score.txt", Regex.Replace(t1scorebox.Text, @"\s+", string.Empty));
 			write("T2Name.txt", t2namebox.Text);
-			write("T2Score.txt", t2scorebox.Text);
+			write("T2Score.txt", Regex.Replace(t2scorebox.Text, @"\s+", string.Empty));
 			write("Quarter.txt", quarterbox.Value.ToString());
 		}
 		void LockboxCheckedChanged(object sender, EventArgs e)
